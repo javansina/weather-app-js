@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .myShadow {
+    box-shadow: #7da1f7 0px 20px 100px 0px;
+  }
+  .myBgGradiant {
+    background: rgb(77, 13, 229);
+    background: linear-gradient(
+      13deg,
+      rgba(77, 13, 229, 1) 47%,
+      rgba(125, 161, 247, 1) 100%
+    );
+  }
+}

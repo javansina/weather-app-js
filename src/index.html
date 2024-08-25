@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/+png" href="/public/partly_cloudy.png" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Weather</title>
+  </head>
+  <body class="container">
+    <div
+      class="flex items-center justify-center bg-gradient-to-tr from-abi-200 to-abi-100 line h-80 mr-8 myShadow rounded-b-[80px]"
+    >
+      <svg
+        class="text-white hover:scale-125 transition-all duration-150 mr-2 w-11 h-11"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+        />
+      </svg>
+      <input
+        class="rounded-l-lg w-96 p-2 outline-none text-blue-950 font-semibold"
+        type="text"
+        placeholder="Enter city name"
+      />
+      <button class="text-xl h-10 px-4 bg-yellow-300 rounded-r-lg">
+        search
+      </button>
+    </div>
+    <div
+      id="weather"
+      class="hidden absolute flex-col justify-center items-center myShadow py-10 px-14 top-1/4 rounded-3xl left-0 right-0 w-fit mx-auto gap-y-5 bg-white"
+    ></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
